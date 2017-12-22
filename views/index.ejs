@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>@<%=username%></title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+<body style="background-image: <%=cover%> !important;">
+
+  <div class="container" style="  background: #bcdee7 url(<%=cover%>) no-repeat center center fixed;">
+    <div class="row mt-2">
+      <aside class="profile-card">
+        <header>
+          <!-- here’s the avatar -->
+          <a target="_blank" href="https://steemit.com/@<%=username%>">
+            <img src="https://img.busy.org/@<%=username%>?s=150" class="hoverZoomLink">
+          </a>
+          <div class="rank-label-container">
+            <span class="label label-default rank-label"><%=rep%></span>
+          </div>
+          <br>
+          <!-- the username -->
+          <h1>
+            @<%=username%>
+          </h1>
+
+          <!-- about and location -->
+          <h2>
+                <%=location%>
+          </h2>
+          <h2>
+               <%=website%>
+          </h2>
+
+        </header>
+
+        <!-- bit of a bio; who are you? -->
+        <div class="profile-bio">
+
+          <p>
+          <h2>
+              <%=about%>
+          </h2>
+          </p>
+
+        </div>
+
+        <!-- some social links to show off -->
+        <ul class="balances">
+          <li>
+            *
+          </li>
+          <li>
+              <%=steem%>
+          </li>
+          
+          <li>
+            <%=sbd%>
+          </li>
+
+          <li>
+            *
+          </li>
+
+        </ul>
+
+      </aside>
+
+    </div>
+  </div>
+
+</body>
+</html>
