@@ -1,6 +1,7 @@
 var express = require('express');
 var steem = require('steem');
 var request = require('request');
+steem.api.setOptions({ url: 'https://api.steemit.com/' });
 
 var router = express.Router();
 
